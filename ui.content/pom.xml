@@ -53,7 +53,7 @@
                     <group>com.ameritas.aem</group>
                     <name>ameritas-aem-assets.ui.content</name>
                     <packageType>content</packageType>
-                    <accessControlHandling>merge</accessControlHandling>
+                    <accessControlHandling>ignore</accessControlHandling>
                     <validatorsSettings>
                         <jackrabbit-filter>
                             <options>

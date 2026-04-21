@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/conf/ameritas" mode="merge"/>
-    <filter root="/content/ameritas" mode="merge"/>
-    <filter root="/content/dam/ameritas" mode="merge">
-        <exclude pattern="/content/dam/ameritas(/.*)?"/>
-        <include pattern="/content/dam/ameritas/jcr:content(/.*)?"/>
-    </filter>
-    <filter root="/content/dam/ameritas/asset.jpg" mode="merge"/>
+    <filter root="/conf/global" mode="merge"/>
+    <filter root="/conf/global/settings/dam/adminui-extension/metadataschema/Emerson"/>
+    <filter root="/content/dam/ameritas" mode="merge"/>
     <filter root="/content/experience-fragments/ameritas" mode="merge"/>
 </workspaceFilter>
