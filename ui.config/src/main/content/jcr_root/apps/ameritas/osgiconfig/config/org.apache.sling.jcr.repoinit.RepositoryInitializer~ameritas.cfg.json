@@ -1,11 +1,11 @@
 {
     "scripts": [
-        "create path (sling:OrderedFolder) /content/dam/ameritas",
-        "create path (sling:OrderedFolder) /content/dam/ameritas/marketing",
-        "create path (sling:OrderedFolder) /content/dam/ameritas/brand-library",
-        "create path (sling:OrderedFolder) /content/dam/ameritas/archive",
-        "create path (sling:OrderedFolder) /content/dam/ameritas/express-uploads",
-        "create path (nt:unstructured) /content/dam/ameritas/jcr:content",
-        "set properties on /content/dam/ameritas/jcr:content\n  set cq:conf{String} to /conf/ameritas\n  set jcr:title{String} to \"Ameritas Life Insurance\"\nend"
+        "create path (sling:OrderedFolder) /content/dam",
+        "create path (sling:OrderedFolder) /content/dam/marketing",
+        "create path (sling:OrderedFolder) /content/dam/brand-library",
+        "create path (sling:OrderedFolder) /content/dam/archive",
+        "create path (sling:OrderedFolder) /content/dam/express-uploads",
+        "create path (nt:unstructured) /content/dam/jcr:content",
+        "set properties on /content/dam/jcr:content\n  set cq:conf{String} to /conf/ameritas\n  set jcr:title{String} to \"Ameritas Life Insurance\"\nend"
     ]
 }
