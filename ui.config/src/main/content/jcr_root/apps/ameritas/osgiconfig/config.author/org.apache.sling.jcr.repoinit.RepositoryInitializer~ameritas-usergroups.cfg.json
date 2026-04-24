@@ -1,7 +1,13 @@
 {
   "scripts": [
+    "create group content-authors",
+    "set properties on authorizable (content-authors)/profile\n  set givenName to \"Content Authors\"\nend",
 
-    "create group ameritas-dam-admins\nset properties on authorizable (ameritas-dam-admins)/profile\n  set givenName to \"Ameritas DAM Administrators\"\nend",
+    "create group content-admin",
+    "set properties on authorizable (content-admin)/profile\n  set givenName to \"Content Administrators\"\nend",
+
+    "create group ameritas-dam-admins",
+    "set properties on authorizable (ameritas-dam-admins)/profile\n  set givenName to \"Ameritas DAM Administrators\"\nend",
     "add ameritas-dam-admins to group administrators",
     "add ameritas-dam-admins to group tag-administrators",
     "add ameritas-dam-admins to group user-administrators",
@@ -10,42 +16,47 @@
     "add ameritas-dam-admins to group dam-users",
     "set ACL for ameritas-dam-admins\n  allow jcr:read,jcr:write,jcr:readAccessControl,jcr:modifyAccessControl on /\nend",
 
-    "create group ameritas-dam-librarians\nset properties on authorizable (ameritas-dam-librarians)/profile\n  set givenName to \"Ameritas DAM Librarians\"\nend",
+    "create group ameritas-dam-librarians",
+    "set properties on authorizable (ameritas-dam-librarians)/profile\n  set givenName to \"Ameritas DAM Librarians\"\nend",
     "add ameritas-dam-librarians to group administrators",
     "add ameritas-dam-librarians to group tag-administrators",
     "add ameritas-dam-librarians to group workflow-users",
     "add ameritas-dam-librarians to group dam-users",
-    "set ACL for ameritas-dam-librarians\n  allow jcr:read,jcr:write on /content/dam/marketing\n  allow jcr:read,jcr:write on /content/dam/brand-library\n  allow jcr:read,jcr:write on /content/dam/archive\n  allow jcr:read,jcr:write on /content/dam/express-uploads\nend",
+    "set ACL for ameritas-dam-librarians\n  allow jcr:read,jcr:write on /content/dam/ameritas/marketing\n  allow jcr:read,jcr:write on /content/dam/ameritas/brand-library\n  allow jcr:read,jcr:write on /content/dam/ameritas/archive\n  allow jcr:read,jcr:write on /content/dam/ameritas/express-uploads\nend",
 
-    "create group ameritas-brand-editors\nset properties on authorizable (ameritas-brand-editors)/profile\n  set givenName to \"Ameritas Brand Editors\"\nend",
+    "create group ameritas-brand-editors",
+    "set properties on authorizable (ameritas-brand-editors)/profile\n  set givenName to \"Ameritas Brand Editors\"\nend",
     "add ameritas-brand-editors to group content-authors",
     "add ameritas-brand-editors to group dam-users",
     "add ameritas-brand-editors to group workflow-users",
-    "set ACL for ameritas-brand-editors\n  allow jcr:read,jcr:write on /content/dam/brand-library\nend",
+    "set ACL for ameritas-brand-editors\n  allow jcr:read,jcr:write on /content/dam/ameritas/brand-library\nend",
 
-    "create group ameritas-marketing-editors\nset properties on authorizable (ameritas-marketing-editors)/profile\n  set givenName to \"Ameritas Marketing Editors\"\nend",
+    "create group ameritas-marketing-editors",
+    "set properties on authorizable (ameritas-marketing-editors)/profile\n  set givenName to \"Ameritas Marketing Editors\"\nend",
     "add ameritas-marketing-editors to group content-authors",
     "add ameritas-marketing-editors to group dam-users",
     "add ameritas-marketing-editors to group workflow-users",
-    "set ACL for ameritas-marketing-editors\n  allow jcr:read,jcr:write on /content/dam/marketing\nend",
+    "set ACL for ameritas-marketing-editors\n  allow jcr:read,jcr:write on /content/dam/ameritas/marketing\nend",
 
-    "create group ameritas-content-hub-collaborators\nset properties on authorizable (ameritas-content-hub-collaborators)/profile\n  set givenName to \"Ameritas Content Hub Collaborators\"\nend",
+    "create group ameritas-content-hub-collaborators",
+    "set properties on authorizable (ameritas-content-hub-collaborators)/profile\n  set givenName to \"Ameritas Content Hub Collaborators\"\nend",
     "add ameritas-content-hub-collaborators to group content-authors",
     "add ameritas-content-hub-collaborators to group dam-users",
     "add ameritas-content-hub-collaborators to group workflow-users",
-    "set ACL for ameritas-content-hub-collaborators\n  allow jcr:read,jcr:modifyProperties,jcr:addChildNodes on /content/dam/brand-library\n  allow jcr:read,jcr:modifyProperties,jcr:addChildNodes on /content/dam/marketing\nend",
+    "set ACL for ameritas-content-hub-collaborators\n  allow jcr:read,jcr:modifyProperties,jcr:addChildNodes on /content/dam/ameritas/brand-library\n  allow jcr:read,jcr:modifyProperties,jcr:addChildNodes on /content/dam/ameritas/marketing\nend",
 
-    "create group ameritas-content-consumers\nset properties on authorizable (ameritas-content-consumers)/profile\n  set givenName to \"Ameritas Content Consumers\"\nend",
+    "create group ameritas-content-consumers",
+    "set properties on authorizable (ameritas-content-consumers)/profile\n  set givenName to \"Ameritas Content Consumers\"\nend",
     "add ameritas-content-consumers to group dam-users",
-    "set ACL for ameritas-content-consumers\n  allow jcr:read on /content/dam/brand-library\n  allow jcr:read on /content/dam/marketing\nend",
+    "set ACL for ameritas-content-consumers\n  allow jcr:read on /content/dam/ameritas/brand-library\n  allow jcr:read on /content/dam/ameritas/marketing\nend",
 
-    "create group ameritas-workflow-notification-users\nset properties on authorizable (ameritas-workflow-notification-users)/profile\n  set givenName to \"Ameritas Workflow Notification Users\"\nend",
+    "create group ameritas-workflow-notification-users",
+    "set properties on authorizable (ameritas-workflow-notification-users)/profile\n  set givenName to \"Ameritas Workflow Notification Users\"\nend",
     "add ameritas-workflow-notification-users to group content-admin",
     "add ameritas-workflow-notification-users to group content-authors",
     "add ameritas-workflow-notification-users to group dam-users",
     "add ameritas-workflow-notification-users to group workflow-users",
     "add ameritas-workflow-notification-users to group workflow-editors",
-    "set ACL for ameritas-workflow-notification-users\n  allow jcr:write on /content/dam\n  allow jcr:write on /etc/workflow/models\nend"
-
+    "set ACL for ameritas-workflow-notification-users\n  allow jcr:write on /content/dam/ameritas\n  allow jcr:write on /etc/workflow/models\nend"
   ]
 }
