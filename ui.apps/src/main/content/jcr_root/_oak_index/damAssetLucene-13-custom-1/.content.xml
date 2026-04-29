@@ -358,6 +358,55 @@
                         propertyIndex="{Boolean}true"
                         useInSpellcheck="{Boolean}true"
                         useInSuggest="{Boolean}true"/>
+                    <documentNumberPrefix
+                        jcr:primaryType="nt:unstructured"
+                        name="jcr:content/metadata/documentNumberPrefix"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        useInSpellcheck="{Boolean}true"
+                        useInSuggest="{Boolean}true"/>
+                    <lineOfBusiness
+                        jcr:primaryType="nt:unstructured"
+                        name="jcr:content/metadata/lineOfBusiness"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        useInSpellcheck="{Boolean}true"
+                        useInSuggest="{Boolean}true"/>
+                    <statesOfUse
+                        jcr:primaryType="nt:unstructured"
+                        name="jcr:content/metadata/statesOfUse"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        useInSpellcheck="{Boolean}true"
+                        useInSuggest="{Boolean}true"/>
+                    <assetLanguage
+                        jcr:primaryType="nt:unstructured"
+                        name="jcr:content/metadata/assetLanguage"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        useInSpellcheck="{Boolean}true"
+                        useInSuggest="{Boolean}true"/>
+                    <individualAudience
+                        jcr:primaryType="nt:unstructured"
+                        name="jcr:content/metadata/individualAudience"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        useInSpellcheck="{Boolean}true"
+                        useInSuggest="{Boolean}true"/>
+                    <retirementPlansAudience
+                        jcr:primaryType="nt:unstructured"
+                        name="jcr:content/metadata/retirementPlansAudience"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        useInSpellcheck="{Boolean}true"
+                        useInSuggest="{Boolean}true"/>
+                    <enterpriseServicesAudience
+                        jcr:primaryType="nt:unstructured"
+                        name="jcr:content/metadata/enterpriseServicesAudience"
+                        nodeScopeIndex="{Boolean}true"
+                        propertyIndex="{Boolean}true"
+                        useInSpellcheck="{Boolean}true"
+                        useInSuggest="{Boolean}true"/>
                     <assetType
                         jcr:primaryType="nt:unstructured"
                         name="jcr:content/metadata/assetType"
