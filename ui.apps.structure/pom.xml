@@ -51,9 +51,6 @@
                         <!-- Oak index parent for custom index definitions -->
                         <filter><root>/oak:index</root></filter>
 
-                        <!-- DAM folder root, will be created via repoinit -->
-                        <filter><root>/content/dam/ameritas</root></filter>
-
                     </filters>
                 </configuration>
             </plugin>
