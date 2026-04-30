@@ -750,14 +750,6 @@
                                             jcr:primaryType="nt:unstructured"
                                             text="Approved"
                                             value="approved"/>
-                                        <rejected
-                                            jcr:primaryType="nt:unstructured"
-                                            text="Rejected"
-                                            value="rejected"/>
-                                        <expired
-                                            jcr:primaryType="nt:unstructured"
-                                            text="Expired"
-                                            value="expired"/>
                                         <archived
                                             jcr:primaryType="nt:unstructured"
                                             text="Archived"
