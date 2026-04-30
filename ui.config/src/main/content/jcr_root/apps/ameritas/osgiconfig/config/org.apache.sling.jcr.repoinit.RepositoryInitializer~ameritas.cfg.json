@@ -6,6 +6,14 @@
         "create path (sling:OrderedFolder) /content/dam/archive",
         "create path (sling:OrderedFolder) /content/dam/express-uploads",
         "create path (nt:unstructured) /content/dam/jcr:content",
-        "set properties on /content/dam/jcr:content\n  set cq:conf{String} to /conf/ameritas\n  set jcr:title{String} to \"Ameritas Life Insurance\"\nend"
+        "create path (nt:unstructured) /content/dam/marketing/jcr:content",
+        "create path (nt:unstructured) /content/dam/brand-library/jcr:content",
+        "create path (nt:unstructured) /content/dam/archive/jcr:content",
+        "create path (nt:unstructured) /content/dam/express-uploads/jcr:content",
+        "set properties on /content/dam/jcr:content\n set metadataSchema{String} to \"/conf/global/settings/dam/adminui-extension/metadataschema/Ameritas\"\nend",
+        "set properties on /content/dam/marketing/jcr:content\n  set jcr:title{String} to \"Marketing\"\n  set metadataSchema{String} to \"/conf/global/settings/dam/adminui-extension/metadataschema/Ameritas\"\nend",
+        "set properties on /content/dam/brand-library/jcr:content\n  set jcr:title{String} to \"Brand Library\"\n  set metadataSchema{String} to \"/conf/global/settings/dam/adminui-extension/metadataschema/Ameritas\"\nend",
+        "set properties on /content/dam/archive/jcr:content\n  set jcr:title{String} to \"Archive\"\n  set metadataSchema{String} to \"/conf/global/settings/dam/adminui-extension/metadataschema/Ameritas\"\nend",
+        "set properties on /content/dam/express-uploads/jcr:content\n  set jcr:title{String} to \"Express Uploads\"\n  set metadataSchema{String} to \"/conf/global/settings/dam/adminui-extension/metadataschema/Ameritas\"\nend"
     ]
 }

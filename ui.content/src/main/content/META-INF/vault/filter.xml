@@ -3,5 +3,5 @@
     <filter root="/conf/ameritas" mode="merge"/>
     <filter root="/conf/global" mode="merge"/>
     <filter root="/conf/global/settings/dam/adminui-extension/metadataschema/Ameritas" mode="merge"/>
-    <filter root="/content/dam/ameritas" mode="merge"/>
+    <filter root="/content/dam" mode="merge"/>
 </workspaceFilter>
